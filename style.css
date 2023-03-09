@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+    --purple:#8911c0;
+    --black:#444;
+    --light-color:#d9d9d9;
+    --bg-color:#ffffff;
+    --border:1px solid #000;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; 
+    padding:0;
+    box-sizing: border-box;
+    outline: none; 
+    border:none;
+    text-decoration: none;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--black);
+}
+
+.active{
+    --black:#fff;
+    --light-color:#ddd;
+    --bg-color:#222;
+    --border:1px solid #000;
+}
+
+section{
+    min-height: 100vh;
+    padding:2rem;
+}
+
+.heading{
+    text-align: center;
+    font-size: 5rem;
+    color:var(--black);
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+}
+
+.home{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home .content img{
+    margin:1rem 0;
+    border:1rem solid transparent;
+    border-radius: 50%;
+    height: 18rem;
+    width: 18rem;
+}
+
+.home .content h3{
+    font-size: 7rem;
+    color:var(--black);
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.home .content p{
+    font-size: 2rem;
+    color:var(--purple);
+    padding-bottom: 0.5rem;
+}
+
+.home .share{
+    position: relative;
+    border-radius: 0.5rem;
+    padding:1rem;
+}
+
+.home .share a{
+    height: 5rem;
+    width: 5rem;
+    font-size: 2rem;
+    color:var(--black);
+}
+
+.home .share a:hover{
+    color:var(--purple);
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .row{
+    padding-top: 2rem;
+}
+
+.about .row .progress ul li{
+    padding: 1em;
+}
+
+.portfolio .box-container .box{
+    text-align: center;
+}
+
+.portfolio .box-container .box img{
+    height: 100%;
+    width: 100%;
+}
+
+#theme-toggler{
+    position: fixed;
+    top:1.5rem; right: 2rem;
+    z-index: 1000;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    text-align: center;
+    color:var(--black);
+    background: var(--bg-color);
+}
+
+#theme-toggler:hover{
+    color:var(--purple);
+}
+
+@media (max-width:990px){
+    html{
+        font-size: 0.8em;
+    }
+}
